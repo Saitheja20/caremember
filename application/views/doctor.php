@@ -13,7 +13,7 @@ if ($con->connect_error) {
     die("Connection failed: " . $con->connect_error);
 }
 
-$query = "SELECT id,image,name, specialized_in FROM doctors_data2";
+$query = "SELECT id,image,name, specialized_in FROM doctors_data2 WHERE status LIKE 1";
 $result = $con->query($query);
 
 $data = [];
