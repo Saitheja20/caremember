@@ -1,0 +1,1 @@
+SELECt * FROM about_us

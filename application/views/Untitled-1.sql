@@ -1,0 +1,1 @@
+SELECT * FROM founder_info;
