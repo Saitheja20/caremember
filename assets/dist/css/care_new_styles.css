@@ -1,0 +1,276 @@
+
+
+.whatsapp{
+    background-color:darkgreen;
+}
+
+@media(max-width:1536px){
+  .mobile_text_sec{
+    height:325px !important;
+  }
+}
+@media(max-width:1366px){
+    .number {
+        font-size: 17px !important;
+    }
+    .care_logo {
+        width: 170px !important;
+    }
+    .mobile_text_sec h3{
+        font-size:43px !important;
+    }
+    .mobile_text_sec {
+        height: 361px !important;
+    }
+}
+@media(max-width:1199px){
+    .mobile_text_sec h3 {
+        font-size: 35px !important;
+    }
+    .mobile_text_sec {
+        height: 300px !important;
+    }
+    .mobile_sec{
+        height:616px !important;
+    }
+    .mobile_text_sec h5{
+        font-size:20px !important;
+    }
+    .about_section p {
+        right: -50px;
+        bottom: 102px;
+    }
+}
+@media(max-width:1024px){
+    .about_inn_main{
+        margin-top: -10px;
+    }
+}
+@media(max-width:991px){
+    .mobile_images_slide .carousel-item img{
+        height:330px !important;
+    }
+    .mobile_text_sec {
+       height: 322px !important;
+       width: 100% !important;
+    }
+    .mobile_sec {
+        height: 794px !important;
+    }
+    .mobile_text_sec h3 {
+        font-size: 66px !important;
+        line-height:70px !important;
+    }
+    .mobile_text_sec h5 {
+        font-size: 30px !important;
+    }
+    .mobile_text_sec h3 span{
+        margin-bottom:30px;
+    }
+    .sticky-social{
+        top:160px !important;
+    }
+    .patient_testi_1 .card {
+        width: 500px !important;
+        height: auto !important;
+    }
+    .testimonials .card_imge img{
+        width:900px;
+    }
+}
+@media(max-width:768px){
+    .about_inn_main {
+        margin-top: 58px !important;
+    }
+    .inner_bnr_sec img {
+        height: 230px !important;
+        object-fit: cover;
+    }
+}
+@media(max-width:767px){
+    .mobile_text_sec h3 {
+        font-size: 55px !important;
+        line-height: 60px !important;
+    }
+}
+
+@media(max-width:600px){
+    .testimonials .card_imge img {
+        width: 160px !important;
+        margin-left:0 !important;
+    }
+    .testimonials .card,
+    .patient_testi_1 .card{
+        flex-direction:column;
+        width:100% !important;
+    }
+    .card_imge{
+        margin-left:0 !important;
+    }
+}
+@media(max-width:575px){
+    .our_export {
+        width: 60% !important;
+        margin: auto;
+        margin-bottom:15px !important;
+        display:block !important;
+    }
+    .our_export_sec::after{
+        display:none;
+    }
+    .video_prp img{
+        border-top: solid 1px #fff;
+        padding-top: 20px;
+    }
+}
+@media(max-width:540px){
+    .our_export p {
+        text-align: end !important;
+    }
+    .doct_name {
+        text-align: end !important;
+        padding-right:20px;
+    }
+}
+
+@media(max-width:436px){
+    .mobile_text_sec h3 {
+        font-size: 45px !important;
+        line-height: 50px !important;
+    }
+    .mobile_text_sec {
+        height: 287px !important;
+    }
+    .mobile_sec {
+        height: 677px !important;
+    }
+    .mobile_text_sec h3 span {
+        margin-bottom: 50px !important;
+    }
+    .mobile_images_slide .carousel-item img {
+        height: auto !important;
+    }
+    .infra {
+        justify-content: left !important;
+        flex-direction: column;
+        margin-bottom: 30px !important;
+        align-items: self-start !important;
+    }
+    .infrastructure h2{
+        margin-bottom:0 !important;
+    }
+    .testimonials .card_imge img{
+        position:unset;
+    }
+    .footer_logo img {
+        width: 80% !important;
+    }
+}
+@media(max-width:432px){
+    .mobile_text_sec h5 {
+        font-size: 26px !important;
+    }
+    .mobile_text_sec {
+        height: 289px !important;
+    }
+    .our_export{
+        width:70% !important;
+    }
+
+}
+
+@media(max-width:425px){
+    .mobile_sec {
+        height: 670px !important;
+    }
+}
+@media(max-width:420px){
+    .mobile_sec {
+        height: 665px !important;
+    }
+    .view_btn{
+        margin-top:0 !important;
+    }
+}
+@media(max-width:410px){
+    .about_section .col-lg-8 .col-lg-4{
+        width:100% !important; 
+        flex-direction: column;
+    }
+    .lab_name {
+        font-size: 21px !important;
+        margin-top:0 !important;
+    }
+    .about_section .export_logo::after,
+    .lab_name br{
+        display:none;
+    }
+    .about_section .row .col-lg-4 .caretitle {
+        text-align: center !important;
+    }
+    .mobile_sec {
+        height: 662px !important;
+    }
+    
+}
+@media(max-width:400px){
+    .mobile_sec {
+        height: 655px !important;
+    }
+}
+@media(max-width:390px){
+    .mobile_sec {
+        height: 648px !important;
+    }
+
+}
+@media(max-width:385px){
+    .mobile_text_sec h5 {
+        font-size: 23px !important;
+    }
+    .mobile_sec {
+        height: 646px !important;
+    }
+}
+@media(max-width:380px){
+    .mobile_sec {
+        height: 643px !important;
+    }
+}
+
+@media(max-width:375px){
+    .mobile_sec {
+        height: 637px !important;
+    }
+    .mobile_text_sec h3{
+        font-size:40px !important;
+    }
+    .patient_name {
+        margin-top: 40px !important;
+    }
+}
+@media(max-width:365px){
+    .mobile_sec {
+        height: 633px !important;
+    }
+}
+@media(max-width:360px){
+    .mobile_sec {
+        height: 630px !important;
+    }
+}
+@media(max-width:320px){
+    .mobile_text_sec h3 {
+        font-size: 33px !important;
+        line-height: 40px !important;
+    }
+    .mobile_text_sec h5 {
+        font-size: 20px !important;
+    }
+    .mobile_text_sec {
+        height: 240px !important;
+    }
+    .mobile_sec {
+        height: 557px !important;
+    }
+}

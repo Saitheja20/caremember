@@ -1,0 +1,391 @@
+.con-start {
+  padding: 50px 0px;
+  background-color: darkblue;
+}
+.contact-info {
+  display: flex;
+}
+.contact-icon {
+  float: left;
+  margin-right: 30px;
+}
+.contact-icon i {
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  line-height: 78px;
+  background: var(--white);
+  border-radius: 50%;
+  color: var(--blue);
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.contact-text h5 {
+  color: var(--white);
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.contact-text p {
+  margin-bottom: 0px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.contact-text p a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.contact-forms {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  padding: 50px 0px;
+  /* height: 100vh; */
+  padding-bottom: 0;
+}
+.doctors_img {
+  margin-right: 30px;
+}
+.section-title h5 {
+  color: var(--blue);
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.section-title h2 {
+  font-size: 58px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  position: relative;
+  font-weight: 700;
+}
+.contact-field input {
+  width: 100%;
+  border: none;
+  padding-left: 15px;
+  transition: 0.3s;
+  border-radius: 0;
+  border: 1px solid #777;
+  height: calc(2.5em + 0.75rem + 2px);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.contact-field textarea {
+  width: 100%;
+  padding: 15px;
+  transition: 0.3s;
+  height: 115px;
+  border: 1px solid #777;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.btn::before {
+  content: "";
+  width: 95%;
+  height: 85%;
+  left: 4px;
+  border: 2px dashed #ffffff70;
+  position: absolute;
+  top: 4px;
+  border-radius: 30px;
+  z-index: -1;
+}
+.contact-bg02 .btn.ss-btn {
+  padding: 20px 30px;
+  text-transform: uppercase;
+}
+.btn {
+  border-radius: 30px;
+  background-color: var(--blue);
+  box-shadow: 0px 10px 30px 0px rgba(12, 103, 177, 0.4);
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1;
+  margin-bottom: 0;
+  padding: 20px 30px;
+  position: relative;
+  z-index: 999;
+}
+.btn:hover {
+  background: var(--blue);
+  color: #fff;
+}
+.btn:hover::before {
+  background: var(--blue);
+  color: #fff;
+  border: 2px solid var(--blue);
+}
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+  outline: none;
+  box-shadow: none;
+}
+.contact-forms {
+  background-image: url(../../images/inner/hero-1.webp);
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-position: 100% 100%;
+  z-index: 0;
+  background-size: 47%;
+}
+.map-section iframe {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+.map-section {
+  margin: 0;
+  padding: 0;
+}
+
+/* book an appointment section 13-11-2024 start*/
+.book_an_appointment_main {
+  background: #f4f6fa;
+  position: relative;
+  padding: 90px 0;
+  margin-bottom: 40px;
+}
+.book_an_appointment_main .container {
+  max-width: 1124px;
+}
+.book_an_appointment_main::before {
+  position: absolute;
+  content: "";
+  background: url(../../images/inner/appointment-bg.png) no-repeat #4d72d0;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 52%;
+  height: 100%;
+}
+.book_an_appointment_main .appointment-form_wrap {
+  margin: 0 0 30px;
+  color: #fff;
+}
+.book_an_appointment_main .heading-style1 {
+  margin: 0 0 30px;
+}
+
+.book_an_appointment_main .heading-style1 span {
+  color: #4d72d0;
+  font-style: italic;
+  position: relative;
+  font-weight: 500;
+  font-size: 13px;
+}
+.book_an_appointment_main .appointment-form_wrap span {
+  color: #fff;
+}
+.appointment-form_wrap .heading-style1 h2 {
+  font-weight: 600;
+  font-size: 40px;
+  color: var(--white);
+  position: relative;
+}
+.form-group-cutom {
+  position: relative;
+  margin: 0 0 40px;
+  font-size: 13px;
+}
+.form-custom {
+  background: transparent;
+  border-bottom: 2px solid #7898dd;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  font-size: 16px;
+  padding: 0 13px;
+  color: #fff;
+  border-radius: 0;
+}
+.form-custom::placeholder {
+  color: var(--white);
+}
+.form-group-cutom i {
+  position: absolute;
+  top: 50%;
+  right: 3px;
+  transform: translateY(-50%);
+  font-size: 13px;
+}
+.btn-success {
+  background-color: #5bc198;
+  border-radius: 0;
+  padding: 18px 38px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 400;
+  border-color: #5bc198;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+.why-choose_block {
+  padding-left: 60px;
+  margin-top: 0;
+}
+.why-choose_block .heading-style1 h2 {
+  font-weight: bold;
+  font-size: 35px;
+}
+.why-choose_block .heading-style1 p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 10px;
+}
+.whychoose-wrap {
+  padding: 20px 22px;
+  margin: 0 0 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.whychoose-wrap img {
+  vertical-align: top;
+  margin: 0 12px 10px 0;
+  width: 38px;
+}
+.whychoose-text_block {
+  display: inline-block;
+  vertical-align: middle;
+}
+.whychoose-text_block h4 {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0;
+}
+.whychoose-text_block p {
+  font-size: 17px;
+  opacity: 0.9;
+}
+.whychoose-wrap:hover {
+  background: #fff;
+}
+.appointment-form_wrap label {
+  font-weight: 300;
+  font-size: 15px;
+  padding: 0 13px;
+}
+.appointment-form_wrap textarea {
+  border-radius: 0;
+  border: 2px solid #7898dd;
+  background: transparent !important;
+  padding: 0 13px;
+}
+.form-control:focus {
+  background-color: transparent;
+  box-shadow: none;
+}
+/* book an appointment section 13-11-2024 end*/
+
+@media (max-width: 1600px) {
+  .contact-forms {
+    background-position: 100% 101%;
+    background-size: 47%;
+  }
+}
+@media (max-width: 991px) {
+  .book_an_appointment_main::before {
+    width: 100%;
+    height: 47%;
+  }
+  .book_an_appointment_main .appointment-form_wrap {
+    margin: 0 20px 30px;
+  }
+  .why-choose_block {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .book_an_appointment_main::before {
+    height: 53%;
+  }
+  .book_an_appointment_main {
+    padding-top: 50px;
+  }
+  .book_an_appointment_main .book_row {
+    row-gap: 30px;
+  }
+  .appointment-form_wrap .heading-style1 h2 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 540px) {
+  .section-title h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 492px) {
+  .why-choose_block .heading-style1 h2,
+  .appointment-form_wrap .heading-style1 h2 {
+    font-size: 30px;
+  }
+  .why-choose_block {
+    padding-left: 0;
+  }
+  .book_an_appointment_main {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 432px) {
+  .section-title h2 {
+    font-size: 36px;
+  }
+  .contact-icon i {
+    height: 60px;
+    width: 60px;
+    line-height: 58px;
+    font-size: 28px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 419px) {
+  .whychoose-wrap {
+    display: flex;
+  }
+}
+@media (max-width: 409px) {
+  .whychoose-wrap {
+    padding: 20px 10px;
+  }
+  .whychoose-wrap img {
+    width: 30px;
+  }
+}
+@media (max-width: 377px) {
+  .whychoose-wrap {
+    flex-direction: column;
+  }
+  .whychoose-wrap img {
+    width: 40px;
+  }
+  .book_an_appointment_main::before {
+    height: 47%;
+  }
+}
+@media (max-width: 375px) {
+  .contact-text p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 335px) {
+  .book_an_appointment_main::before {
+    height: 44%;
+  }
+}

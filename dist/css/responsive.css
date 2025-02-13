@@ -1,0 +1,1019 @@
+@media (max-width: 1710px) {
+  .caption {
+    width: 660px;
+    height: 380px;
+    top: 180px;
+  }
+  .caption h2 {
+    width: 450px;
+    font-size: 76px;
+    margin-left: 60px;
+  }
+  .our_export_sec::after {
+    top: 360px;
+    right: 842px;
+  }
+  .services .container-fluid {
+    padding: 0px 110px;
+  }
+  .services .container-fluid,
+  .infrastructure .container-fluid {
+    padding: 0px 140px;
+  }
+  .infra_img img {
+    border-radius: 30px;
+  }
+
+  .service_icon h4 {
+    font-size: 21px;
+  }
+}
+@media (max-width: 1600px) {
+  .about_section p {
+    margin-bottom: 30px;
+  }
+      .our_export_sec::after {
+        top: 200px;
+        right: 792px;
+    }
+  .book_now_img {
+    width: 90%;
+  }
+  .about_section .export_logo img {
+    width: 85%;
+  }
+  .about_section .row .col-lg-4 .caretitle {
+    margin-left: 40px;
+  }
+  .about_section .export_logo::after {
+    left: 91px;
+  }
+  .online_con h3 {
+    margin-bottom: 20px;
+  }
+  .service_icon h4 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1536px) {
+  .about_section p {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+  .about_section h2 {
+    font-size: 44px;
+  }
+  .export_logo img {
+    width: 80%;
+  }
+  .about_inn_main {
+    height: 300px !important;
+  }
+  .about_section .row .col-lg-4 .caretitle {
+    margin-left: 40px;
+  }
+  .about_section .export_logo::after {
+    left: 90px;
+  }
+  .online_con h3 {
+    margin-bottom: 25px;
+  }
+  .phone_img img {
+    width: 90%;
+  }
+  .main_title h2 {
+    font-size: 60px;
+    margin-bottom: 41px;
+  }
+  .our_export_sec .container {
+    max-width: 1320px;
+  }
+  .our_export img {
+    border-radius: 41px;
+  }
+  .our_export h3 {
+    font-size: 24px;
+  }
+  .our_export_sec::after {
+    top: 190px;
+    right: 732px;
+    height: 430px;
+  }
+  p {
+    font-size: 16px;
+  }
+
+  .service_icon h4 {
+    font-size: 19px;
+  }
+  .services .row {
+    row-gap: 25px;
+  }
+  .fasilty:nth-child(1) {
+    width: 100%;
+  }
+  .service_icon {
+    gap: 10px;
+    margin-left: 20px;
+  }
+  .brouch {
+    width: 370px;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .brocher h3 {
+    font-size: 34px;
+  }
+}
+@media (max-width: 1440px) {
+  .lab_name {
+    font-size: 22px;
+  }
+  .about_section .row .col-lg-4 .caretitle {
+    margin-left: 30px;
+  }
+  .about_section .export_logo::after {
+    left: 80px;
+  }
+  .our_export_sec::after {
+    top: 280px;
+    right: 692px;
+  }
+  .service_icon img {
+    width: 25%;
+  }
+  .service_icon {
+    gap: 8px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 1366px) {
+  .caption {
+    width: 560px;
+    height: 340px;
+    top: 150px;
+  }
+  .count-text {
+    left: -40px;
+    font-size: 55px;
+  }
+  .caption h2 {
+    font-size: 65px;
+    margin-left: 50px;
+  }
+  .lab_name {
+    font-size: 20px;
+  }
+  .about_section .export_logo::after {
+    left: 70px;
+  }
+  .phone_img img {
+    width: 100%;
+  }
+  .infrastructure,
+  .services,
+  .our_export_sec,
+  .about_section,
+  .testimonials {
+    height: AUTO;
+    padding: 50px 0;
+  }
+  .services{
+      margin:10px 0px;
+  }
+  .service_icon h4 {
+    font-size: 17px;
+  }
+  .our_export {
+    width: 230px;
+  }
+  .our_export_sec .container {
+    max-width: 1120px;
+  }
+  .our_export h3 {
+    font-size: 21px;
+  }
+  .our_export_sec::after {
+    top: 150px;
+    right: 652px;
+    height: 350px;
+  }
+  .our_export p {
+    font-size: 21px;
+  }
+  p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  #carouselExampleFade .doctor_indicators {
+    margin-bottom: -2rem;
+  }
+  .our_export_sec {
+    padding-bottom: 70px;
+  }
+  .patient_testi_1 .card {
+    width: 500px;
+    height: 300px;
+  }
+  .empty_card .card p {
+    width: 405px;
+    margin-left: 50px;
+    font-size: 16px;
+  }
+  #carouselExampletesti .carousel-indicators {
+    bottom: -58px;
+  }
+  .empty_card .patient_name h6 {
+    margin-left: 50px;
+  }
+  .expert_text::after {
+    right: 20px;
+  }
+  #carouselExampletesti .card_body p {
+    font-size: 16px;
+  }
+  .empty_card .carousel-indicators {
+    justify-content: left;
+    bottom: -58px;
+    left: -53px;
+}
+}
+@media (max-width: 1280px) {
+  .lab_name {
+    font-size: 19px;
+  }
+  .our_export_sec::after {
+    right: 610px;
+  }
+  .service_icon h4 {
+    font-size: 16px;
+  }
+  .about_inn_main {
+    height: 250px !important;
+  }
+}
+@media (max-width: 1200px) {
+  .lab_name {
+    font-size: 17px;
+  }
+  .book_now {
+    font-size: 14px;
+  }
+  .our_export_sec::after {
+    right: 580px;
+  }
+  .main_title h2 {
+    font-size: 50px;
+  }
+  .service_icon {
+    margin-top: -20px;
+  }
+  .service_icon h4 {
+    font-size: 16px;
+  }
+  .about_section .export_logo::after {
+    left: 60px;
+  }
+}
+@media (max-width: 1199px) {
+  .our_export_sec::after {
+    height: 330px;
+  }
+  .expert_text h3 {
+    font-size: 26px;
+  }
+  .count-text {
+    left: 10px;
+    font-size: 55px;
+  }
+  .expert_text::after {
+    right: 25px;
+    top: -10px;
+  }
+  .service_icon {
+    margin-top: 0px;
+    margin-left: 0;
+  }
+  .patient_testi_1 {
+    padding-right: 0px;
+  }
+  .empty_card .card_imge {
+    margin-left: 0;
+  }
+  .empty_card .card p {
+    width: 100%;
+    margin-left: 0;
+  }
+  .empty_card .patient_name h6 {
+    margin-left: 0;
+  }
+  .testimonials .card {
+    padding: 20px;
+  }
+  .caption {
+    display: none;
+  }
+  .empty_card .patient_name h6 {
+    margin-top: 12px;
+  }
+  .brocher{
+    margin-bottom: 16px;
+  }
+  .brouch {
+    width: 300px;
+}
+}
+@media (max-width:1024px) {
+.our_export_sec::after {
+  position: absolute;
+  content: '';
+  height: 382px;
+  width: 1px;
+  background: white;
+  top: 102px;
+  right: 473px;
+}
+.doct_name {
+  text-align: center;
+}
+.our_export p {
+  padding-right: 11px;
+  text-align: end;
+}
+.our_export img {
+  width: 222px;
+  border-radius: 20px;
+}
+}
+@media (max-width: 992px) {
+.count-text {
+  left: 95px;
+  font-size: 55px;
+}
+.our_export img {
+  width: 211px;
+  border-radius: 20px;
+}
+.our_export h3 {
+  font-size: 20px;
+}
+.our_export p {
+  padding-right: 14px;
+}
+}
+
+@media (max-width: 991px) {
+  .about_section .container-fluid {
+    padding: 0px 130px;
+  }
+  .about_section .export_logo::after {
+    left: 90px;
+  }
+  .Our_sec{
+    border-bottom:dotted 2px var(--blue);
+    border-right:none !important;
+  }
+  .count-text {
+    position: absolute;
+    left: 28px !important;
+  }
+ .team-sliders .slick-prev {
+    left: -9px;
+}
+  .expert_text::after {
+    display: none;
+  }
+  .expert_second_row .row,
+  .expert_main .row {
+    row-gap: 30px;
+  }
+  .expert_text {
+    border-bottom: solid 1px #fff;
+    padding-bottom: 25px;
+  }
+  .expert_text h3 br{
+    display: none;
+  }
+  .expert_main{
+    border-bottom:none;
+  }
+  .service .row {
+    row-gap: 25px;
+  }
+  .doctor_profile_main .row {
+    row-gap: 40px;
+  }
+  /* .ser-card {
+    margin: 0 !important;
+  } */
+  .about_section .col-lg-8 {
+    margin-bottom: 50px;
+  }
+  .lab_name {
+    font-size: 22px;
+  }
+  .book_now {
+    font-size: 16px;
+  }
+  .our_export_sec .doct_gap1 {
+    padding-right: 0;
+    margin-bottom: 50px;
+  }
+  /* .our_export {
+    width: 100%;
+} */
+  /* #carouselExampleFade2 .col-lg-12 {
+    padding-left: 0;
+  } */
+  .our_export_sec .container {
+    max-width: 720px;
+  }
+  .our_export_sec::after {
+    right: 520px;
+    height: 300px;
+  }
+  .our_export img {
+    border-radius: 30px;
+  }
+  .service_icon {
+    align-items: end;
+    gap: 20px;
+    margin-top: -30px;
+    margin-left: 30px;
+  }
+  .service_icon h4 {
+    font-size: 21px;
+  }
+  .infrastructure .row .col-lg-4 {
+    margin-bottom: 20px;
+  }
+  .our_export_sec .doct_gap2 {
+    padding-left: 0;
+  }
+  #carouselExampletesti .carousel-indicators {
+    bottom: -55px;
+    left: -80px;
+  }
+  .empty_card .carousel-indicators {
+    bottom: -55px;
+    left: -80px;
+  }
+  .patient_testi_1 {
+    padding-right: 12px;
+  }
+  .count-text {
+    left: 31px;
+    font-size: 55px;
+}
+.founder_main {
+  height: auto;
+  padding: 50px 0;
+}
+.founder_img {
+  width: 55%;
+  margin: auto;
+  margin-top: 25px;
+}
+.founder_img_sec {
+  text-align: center;
+}
+.our_export img {
+  width:100%;
+}
+.footer ul .adress p {
+  font-size: 18px !important;
+  line-height: 24px;
+}
+.timmings {
+  margin-bottom: 10px;
+}
+.empty_card{
+  margin:30px 0px;
+}
+.brocher h3 {
+  font-size: 31px;
+}
+}
+@media (max-width:768px) {
+  .our_export_sec::after {
+    right: 430px;
+    top: 140px;
+  }
+  #carouselExampleFade2 .col-lg-12 {
+    padding-left: 38px;
+}
+  .service_icon h4 {
+    font-size: 16px;
+  }
+  .service_icon img {
+    width: 25%;
+  }
+  .service_icon {
+    gap: 6px;
+    margin-left: 10px;
+  }
+  .about_section .container-fluid {
+    padding: 0 12px;
+  }
+  .our_export_sec .doct_gap2 p {
+    padding: 0px 31px;
+}
+}
+@media (max-width: 767px) {
+  .export_logo img {
+    width: 100%;
+  }
+  .lab_name {
+    font-size: 24px;
+  }
+  .about_section .export_logo::after {
+    left: 50%;
+  }
+  .about_section .row .col-lg-4 .caretitle {
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 41px;
+  }
+  .lab_name br {
+    display: none;
+  }
+  .book_now {
+    font-size: 18px;
+  }
+
+  .services .container-fluid,
+  .infrastructure .container-fluid {
+    padding: 0 12px;
+  }
+  .service_icon {
+    margin-top: -60px;
+  }
+  .service_icon h4 {
+    font-size: 24px;
+  }
+  .service_icon {
+    gap: 10px;
+    margin-left: 20px;
+    margin-top: -30px;
+  }
+  .infra_img img {
+    border-radius: 20px;
+  }
+  .infra_img img {
+    border-radius: 20px;
+    width: 100%;
+  }
+  .about_section .export_logo {
+    text-align: center;
+  }
+  .export_logo img {
+    width: 80%;
+  }
+  .testimonials {
+    padding: 50px 0;
+  }
+  .footer::after {
+    width: 722px;
+    height:224px;
+  }
+  .footer::before {
+    left: 35px;
+  }
+  #carouselExampletesti .carousel-indicators {
+    left: unset;
+  }
+  .empty_card .carousel-indicators {
+    bottom: -25px;
+    left: unset;
+    margin-right: 0;
+  }
+  .testimonials .container {
+    max-width: 620px;
+  }
+  .our_export_sec {
+    height: fit-content;
+  }
+  #carouselExampletesti .carousel-indicators {
+    margin-right: 12px;
+  }
+}
+@media (max-width: 600px) {
+  .service_icon h4 {
+    font-size: 19px;
+  }
+  .service_icon {
+    margin-left: 10px;
+  }
+  .our_export_sec::after {
+    right: 320px;
+    top: 151px;
+  }
+  #carouselExampleFade2 .col-lg-12 {
+    padding-left: 22px;
+  }
+  .testimonials .card {
+    margin-right: 12px;
+  }
+  .footer::after {
+    width: 722px;
+    height:228px;
+}
+}
+@media (max-width: 576px) {
+  .service_icon h4 {
+    font-size: 18px;
+  }
+  .infrastructure h2,
+  .main_title h2 {
+    font-size: 44px;
+  }
+  .lab_name {
+    font-size: 21px;
+  }
+  .book_now {
+    font-size: 16px;
+  }
+  #carouselExampletesti .card_body {
+    margin-top: 50px;
+  }
+  .card_imge {
+    margin-left: 0;
+  }
+  .testimonials .card {
+    padding: 30px 20px;
+    display: block;
+  }
+  .testimonials .card_imge img {
+    margin-left: 0;
+    border: 2px solid white;
+    border-radius: 20px;
+    position: absolute;
+    width: 40%;
+    top: -30%;
+    right: 0;
+    transform: translateX(-71%);
+  }
+  .testimonials #carouselExampletesti .carousel-inner {
+    padding-top: 110px;
+  }
+  .patient_testi_1 .card {
+    width: 100%;
+    height: 340px;
+  }
+  #carouselExampletesti .card_body {
+    margin-top: 90px;
+  }
+  .patient_name {
+    width: max-content;
+  }
+  #carouselExampletesti .carousel-indicators {
+    bottom: -50px;
+    justify-content: end;
+    margin-right: 0;
+    margin-left: unset;
+  }
+  #carouselExampletesti .carousel-indicators {
+    margin-right: 12px;
+  }
+  .brocher h3 {
+    font-size: 32px;
+  }
+  .brouch {
+    width: 350px;
+  }
+  .time strong {
+    font-size: 21px;
+  }
+  .patient_name h6 {
+    margin-top:5px;
+  }
+  .our_export_sec::after {
+    right: 300px;
+    top: 136px;
+}
+}
+
+@media (max-width: 575px) {
+  .lab_name {
+    font-size: 24px;
+  }
+}
+@media (max-width: 540px) {
+  .about_section .export_logo::after {
+    left: 243px;
+    top: 20px;
+    height: 170px;
+    width: 2px;
+  }
+  .about_section .col-lg-8 .col-lg-4 {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  .about_section .row .col-lg-4 .caretitle {
+    text-align: left;
+  }
+  .about_section .col-lg-8 .col-lg-4:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  .services .row .col-lg-3.col-md-6.col-sm-6.col-6 {
+    width: 100%;
+  }
+  .service_icon h4 {
+    font-size: 24px;
+  }
+  .service_icon {
+    margin-top: -50px;
+  }
+  .doct_name {
+    text-align: left;
+  }
+  .our_export h3 {
+    font-size: 25px;
+  }
+  .our_export {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    gap: 20px;
+  }
+  .our_export_sec .col-lg-6.col-md-6.col-sm-6.col-6 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .our_export p {
+    text-align: left;
+  }
+  .our_export_sec::after {
+    display: none;
+  }
+  .doct_name {
+    margin-bottom: 20px;
+  }
+  .our_export_sec .container {
+    max-width: 100%;
+    padding: 0 12px;
+  }
+  .our_export img {
+    border-radius: 30px;
+    width: 50%;
+  }
+  .our_export h3 {
+    font-size: 22px;
+  }
+.offcanvas.offcanvas-end {
+    width: 100% !important; 
+
+}
+.our_export img {
+  margin-top:20px;
+}
+.our_export_sec .doct_gap2 p {
+  font-size: 16px;
+  padding: 0px 0px;
+  text-align: justify;
+}
+.slick-prev {
+  left: 22px;
+}
+
+}
+@media (max-width: 492px) {
+  .lab_name {
+    font-size: 21px;
+  }
+  .about_section .export_logo::after {
+    left: 223px;
+    height: 140px;
+  }
+  a {
+    font-size: 16px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .lab_name br {
+    display: block;
+  }
+  .about_section .col-lg-8 .col-lg-4 {
+    gap: 30px;
+  }
+  .about_section .export_logo::after {
+    left: 213px;
+    height: 140px;
+  }
+  .about_section .col-lg-8 .col-lg-4:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .testi_title h3 {
+    font-size: 34px;
+  }
+  .testimonials .card_imge img {
+    top: -23%;
+  }
+  #carouselExampletesti .card_body {
+    margin-top: 60px;
+  }
+  .testimonials #carouselExampletesti .carousel-inner {
+    padding-top: 80px;
+  }
+  .patient_name {
+    margin-top: 10px;
+  }
+  .service_icon {
+    margin-top: -30px;
+  }
+}
+@media (max-width: 432px) {
+.count-text {
+  left: 67px;
+  font-size: 55px;
+}
+}
+@media (max-width: 425px) {
+.viewmore {
+  padding:15px 23px;
+}
+.infrastructure h2, .main_title h2 {
+  font-size: 40px;
+}
+.view_btn{
+  margin-top:-15px;
+}
+.about_section h2 {
+  font-size: 40px;
+}
+}
+@media (max-width: 414px) {
+  .service_icon {
+    margin-top: -40px;
+  }
+}
+@media (max-width: 412px) {
+  .patient_name h6 {
+    margin-top: 0px;
+  }
+  .time strong {
+    font-size: 22px;
+  }
+  .about_section h2,
+  .infrastructure h2,
+  .main_title h2 {
+    font-size: 40px;
+  }
+  .lab_name {
+    font-size: 19px;
+  }
+  .about_section .col-lg-8 .col-lg-4 {
+    gap: 20px;
+  }
+
+  .our_export h3 {
+    font-size: 19px;
+  }
+  .infra {
+    display:block;
+  }
+  .view_btn {
+    width:100%;
+    margin-top: -36px;
+  }
+  .viewmore {
+    margin: 20px 0px 20px 0px;
+    width:100%;
+    padding: 15px 20px;
+}
+}
+@media (max-width:400px) {
+.slick-next {
+  right: 7px;
+}
+.count-text {
+  left: 44px;
+  font-size: 55px;
+}
+
+.offcanvas-header .navbar-brand img{
+  width:75%;
+}
+}
+
+@media (max-width: 386px) {
+  .lab_name {
+    font-size: 18px;
+  }
+  .about_section .export_logo::after {
+    left: 208px;
+  }
+  .testimonials .card {
+    padding: 22px 10px;
+    display: block;
+}
+#carouselExampletesti .card_body p {
+  line-height: 24px;
+}
+.empty_card .card p {
+  line-height: 24px;
+}
+.slick-next {
+  right: -2px;
+}
+}
+@media (max-width: 380px) {
+  .export_logo img {
+    width: 75%;
+  }
+  .about_section .export_logo::after {
+    height: 120px;
+  }
+  .lab_name {
+    font-size: 17px;
+  }
+  .slick-next:before {
+    display: none;
+  }
+  .slick-prev:before{
+    display:none;
+  }
+}
+@media (max-width: 375px) {
+.book_now {
+  font-size: 15px;
+}
+}
+@media (max-width: 360px) {
+  .about_section .col-lg-8 .col-lg-4:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .about_section .export_logo {
+    width: 60%;
+  }
+  .book_now {
+    font-size: 15px;
+  }
+  .about_section .export_logo::after {
+    left: 188px;
+  }
+  .about_section .col-lg-8 .col-lg-4 {
+    gap: 0px;
+  }
+  .our_export h3 {
+    font-size: 18px;
+  }
+  .our_export {
+    gap: 10px;
+  }
+  .brouch {
+    width: 293px;
+  }
+  .copyright li {
+    font-size: 12px;
+  }
+  .copyright li a{
+    font-size: 12px;
+  }
+  .brocher h3 {
+    font-size: 27px;
+  }
+  .footer::after {
+    width: 722px;
+    height: 201px;
+  }
+}
+@media (max-width: 320px) {
+.brouch {
+  width: 293px;
+}
+.copyright li {
+  font-size: 12px;
+}
+.copyright li a{
+  font-size: 12px;
+}
+.brocher h3 {
+  font-size: 27px;
+}
+.footer::after {
+  width: 722px;
+  height: 201px;
+}
+.crm_text span {
+  font-size: 18px;
+}
+sub {
+  font-size: 15px;
+}
+.about_section .export_logo::after {
+  left: 147px;
+}
+.about_section .export_logo {
+  width: 52%;
+}
+.service_icon h4 {
+  font-size: 20px;
+}
+.patient_name h6 {
+  margin-top: -25px;
+}
+}
