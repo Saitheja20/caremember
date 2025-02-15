@@ -1,48 +1,78 @@
+<?php
+$con = mysqli_connect('srv1328.hstgr.io', 'u629694569_carehospital', 'Kakatiya1234$', 'u629694569_carediabetesce');
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+if (!$con) {
+	die("Connection failed: " . mysqli_connect_error());
+}
+
+$query = "SELECT id, image_for_service, header, main_points FROM services";
+
+// Execute the query
+$result = mysqli_query($con, $query);
+
+if (!$result) {
+	die("Invalid query: " . mysqli_error($con));
+} else {
+	$data = [];
+	while ($row = mysqli_fetch_assoc($result)) {
+		if (!empty($row['image_for_service'])) {
+			$row['image_for_service'] = base64_encode($row['image_for_service']);
+		} else {
+			$row['image_for_service'] = null;
+		}
+		$data[] = $row;
+	}
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <?php include 'head_links.php' ?>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-    <link rel="stylesheet" href="<?php echo $base_url; ?>assets/dist/css/about.css">
-    <link rel="stylesheet" href="<?php echo $base_url; ?>assets/dist/css/service.css">
-    <link rel="stylesheet" href="<?php echo $base_url; ?>assets/dist/css/responsive.css">
+	<?php include 'head_links.php' ?>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+	<link rel="stylesheet" href="<?php echo $base_url; ?>assets/dist/css/about.css">
+	<link rel="stylesheet" href="<?php echo $base_url; ?>assets/dist/css/service.css">
+	<link rel="stylesheet" href="<?php echo $base_url; ?>assets/dist/css/responsive.css">
 </head>
 
 <body>
 
-    <?php include 'header.php' ?>
+	<?php include 'header.php' ?>
 
-    <section class="about_inn_main">
-        <div class="inner_bnr_sec">
-            <img src="<?php echo $base_url; ?>assets/images/inner/inner_banner16.png">
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb__content">
-                        <h2>Service</h2>
-                        <div class="breadcrumb__menu">
-                            <nav>
-                                <ul>
-                                    <li><a href="<?php echo $base_url; ?>">Home</a></li>
-                                    <i class="fa-solid fa-chevron-right"></i>
-                                    <li><span>Service</span></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+	<section class="about_inn_main">
+		<div class="inner_bnr_sec">
+			<img src="<?php echo $base_url; ?>assets/images/inner/inner_banner16.png">
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="breadcrumb__content">
+						<h2>Service</h2>
+						<div class="breadcrumb__menu">
+							<nav>
+								<ul>
+									<li><a href="<?php echo $base_url; ?>">Home</a></li>
+									<i class="fa-solid fa-chevron-right"></i>
+									<li><span>Service</span></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <section class="service">
-        <div class="container">
-            <h1>Our Services</h1>
+	<section class="service">
+		<div class="container">
+			<h1>Our Services</h1>
 
-            <!-- <div class="your-slider">
+			<!-- <div class="your-slider">
                 <div class="slide">
                     <div class="ser-card card-1">
                         <div class="row">
@@ -377,7 +407,33 @@
                 </div>
             </div> -->
 
-            <div class="row">
+			<div class="row">
+				<?php foreach ($data as $index => $service): ?>
+					<div class="col-lg-4 col-md-6">
+						<div class="service_card_sec ser-card card-<?php echo ($index % 6) + 1; ?>">
+							<div class="ser-icon">
+								<?php if ($service['image_for_service']): ?>
+									<img src="data:image/jpeg;base64,<?php echo $service['image_for_service']; ?>" class="img-fluid icon-img" alt="service-icon">
+								<?php else: ?>
+									
+									<img src="<?php echo $base_url; ?>assets/images/inner/era-treatment.webp" class="img-fluid icon-img" alt="service-icon">
+								<?php endif; ?>
+							</div>
+							<div class="ser-text">
+								<h5><?= nl2br(htmlspecialchars(str_replace("\\n", "\n", $service['header']))); ?></h5>
+								<p><?= nl2br(htmlspecialchars(str_replace("\\n", "\n", $service['main_points']))); ?></p>
+								
+
+								<div class="read">
+									<a href="<?php echo $base_url . 'ErectileDysfunction'; ?>" class="btns btn-dark" tabindex="0">View More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				<?php endforeach; ?>
+			</div>
+
+			<!-- <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="service_card_sec ser-card card-1">
                         <div class="ser-icon">
@@ -665,16 +721,16 @@
                     </div>
                 </div>
 
-            </div>
+            </div> -->
 
-    </section>
+	</section>
 
 
-    <?php include 'footer.php' ?>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<?php include 'footer.php' ?>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <!-- Slick Carousel JS -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	<!-- Slick Carousel JS -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
   $(document).ready(function() {
   $('.your-slider').slick({

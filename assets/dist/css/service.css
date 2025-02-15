@@ -373,7 +373,7 @@
   display: block;
 } */
 .ser-text p::before {
-  content: '👉'; 
+  /* content: '👉';  */
   display: inline-block;
   width: 1em; 
   margin-right: 0.5em; 
