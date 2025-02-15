@@ -110,6 +110,7 @@ $route['physiotheraph'] = 'welcome/physiotheraph';
 $route['pnemococal'] = 'welcome/pnemococal';
 
 $route['service'] = 'welcome/service';
+$route['disease_details'] = 'welcome/disease_details';
 $route['bookAppointment'] = 'welcome/bookAppointment';
 $route['ErectileDysfunction'] = 'welcome/ErectileDysfunction';
 $route['venkateswarlu'] = 'welcome/venkateswarlu';

@@ -26,6 +26,7 @@ if (!$result) {
 		$data[] = $row;
 	}
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -425,7 +426,8 @@ if (!$result) {
 								
 
 								<div class="read">
-									<a href="<?php echo $base_url . 'ErectileDysfunction'; ?>" class="btns btn-dark" tabindex="0">View More</a>
+									<a href="<?php echo $base_url . 'disease_details?id=' . $service['id']; ?>" class="btns btn-dark" tabindex="0">View More</a>
+
 								</div>
 							</div>
 						</div>

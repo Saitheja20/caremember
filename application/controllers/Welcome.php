@@ -274,6 +274,10 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('service');
 	}
+	public function disease_details()
+	{
+		$this->load->view('disease_details');
+	}
 	public function venkateswarlu()
 	{
 		$this->load->view('venkateswarlu');
