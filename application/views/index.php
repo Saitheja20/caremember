@@ -503,7 +503,7 @@
 					}
 
 					// Fetch videos from the database
-					$query = "SELECT * FROM expert_videos";
+					$query = "SELECT * FROM expert_videos2";
 					$result = mysqli_query($con, $query);
 
 					// Initialize the array to hold the fetched data
@@ -512,12 +512,12 @@
 					if ($result) {
 						while ($row = mysqli_fetch_assoc($result)) {
 							// If the video path is not NULL, keep it as is
-							if (!empty($row['video_data'])) {
-								// No base64 encoding needed for file path
-								$row['video_data'] = base64_encode($row['video_data']);
-							} else {
-								$row['video_data'] = null; // No video available
-							}
+							// if (!empty($row['video_data'])) {
+							// 	// No base64 encoding needed for file path
+							// 	$row['video_data'] = base64_encode($row['video_data']);
+							// } else {
+							// 	$row['video_data'] = null; // No video available
+							// }
 							$data[] = $row;
 						}
 					}
@@ -544,7 +544,7 @@
 								// Generate carousel items dynamically
 								foreach ($data as $index => $video) {
 									$activeClass = $index === 0 ? 'active' : '';  // Set first item as active
-									$videoSource = $video['video_data'];  // Video source from the database
+									$videoSource = $video['video_link'];  // Video source from the database
 									$description = $video['description'];  // Description from the database
 								?>
 									<div class="carousel-item <?php echo $activeClass; ?>">
@@ -560,8 +560,9 @@
                                             Your browser does not support the video tag.
                                         </video> -->
 															<video id="myVideo1" width="600" height="300" controls muted>
-																<source src="data:video/mp4;base64,<?php echo $videoSource; ?>" type="video/mp4">
-																<source src="data:video/ogg;base64,<?php echo $videoSource; ?>" type="video/ogg">
+														<source src="http://localhost/caremember2/caremember/assets/videos/<?php echo $videoSource; ?>" type="video/mp4">
+														<source src="http://localhost/caremember2/caremember/assets/videos/<?php echo $videoSource; ?>" type="video/ogg">
+
 																Your browser does not support the video tag.
 															</video>
 														<?php else: ?>
