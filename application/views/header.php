@@ -213,6 +213,7 @@ Temple Road, Hanamkonda - 506001</title>
 
 <div class="sticky-social">
   <ul class="social">
+	 <li class="playstore"><a href="https://www.carediabetescentre.com/assets/app/Dummy-1.0.apk" download tooltip="Whatsapp"><i class="fa-brands fa-google-play"></i></a></li>
       <li class="whatsapp"><a href="https://api.whatsapp.com/send?phone=+91 8712608502&text=Hii" tooltip="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
     <li class="fb"><a href="https://www.facebook.com/share/1EoceiafoL/" tooltip="facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
         <!--<li class="twitter"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>-->

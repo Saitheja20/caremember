@@ -129,6 +129,95 @@
 		.phone_img {
 			text-align: left;
 		}
+
+		.video_prp video {
+
+			background: #6c757d96;
+		}
+
+		.video-container {
+
+			width: 100%;
+			margin: 0 auto;
+		}
+
+		video {
+			display: block;
+			/* Ensures video is treated as a block element */
+		}
+
+		@media (max-width: 1440px) {
+
+			.video_prp video {
+				width: 500px;
+				background: #6c757d96;
+			}
+		}
+
+		@media (max-width:1366px) {
+			.video_prp video {
+				width: 450px;
+				background: #6c757d96;
+			}
+		}
+
+		@media (max-width: 1024px) {
+			.video_prp video {
+				width: 391px;
+				background: #6c757d96;
+			}
+		}
+
+		@media (max-width:991px) {
+			.video_prp video {
+				width: 500px;
+				background: #6c757d96;
+			}
+
+			video {
+				display: block;
+				margin: 0 auto;
+			}
+		}
+
+		@media (max-width:492px) {
+			.video_prp video {
+				width: 472px;
+				background: #6c757d96;
+			}
+		}
+
+		@media (max-width: 432px) {
+			.video_prp video {
+				height: 270px;
+				width: 400px;
+				background: #6c757d96;
+			}
+		}
+
+		@media (max-width:400px) {
+			.video_prp video {
+				height: 270px;
+				width: 377px;
+				background: #6c757d96;
+			}
+		}
+
+		@media (max-width:375px) {
+			.video_prp video {
+				height: 270px;
+				width: 345px;
+				background: #6c757d96;
+			}
+		}
+
+		@media (max-width: 320px) {
+			.video_prp video {
+				height: 237px;
+				width: 301px;
+				background: #6c757d96;
+			}
+		}
 	</style>
 
 </head>
@@ -413,248 +502,226 @@
 						data-aos-duration="1000">Our Experts</h2>
 				</div>
 				<div class="row">
-					<?php
-					// Database connection settings
-					$servername = "srv1328.hstgr.io";  // Database server
-					$username = "u629694569_carehospital";         // Database username
-					$password = "Kakatiya1234$";             // Database password
-					$dbname = "u629694569_carediabetesce";  // Your database name
-
-					// Create connection
-					$con = new mysqli($servername, $username, $password, $dbname);
-
-					// Check connection
-					if ($con->connect_error) {
-						die("Connection failed: " . $con->connect_error);
-					}
-
-					// $query = "SELECT id, image, name, specialized_in FROM doctors_data2 ORDER BY sort_order ASC WHERE status LIKE 1";'
-					$query = "SELECT id, image, name, specialized_in FROM doctors_data2 WHERE status = 1 ORDER BY sort_order ASC";
-
-					$result = $con->query($query);
-
-					$data = [];
-					if ($result) {
-						while ($row = $result->fetch_assoc()) {
-							if (!empty($row['image'])) {
-								$row['image'] = base64_encode($row['image']); // Encoding the image in base64
-							} else {
-								$row['image'] = null;
-							}
-							$data[] = $row;
-						}
-					}
-
-					$count = 1; // Initialize counter for doctor numbers
-
-					// Split the data into chunks of 2 doctors each
-					$chunks = array_chunk($data, 2);
-					?>
-
-					<div class="col-lg-6  col-md-12 col-sm-12 doct_gap1 os-init aos-animate" data-aos-easing="linear" data-aos-delay="500" data-aos="fade-right" data-aos-duration="1000">
+					<div class="col-lg-6  col-md-12 col-sm-12 doct_gap1 os-init aos-animate" data-aos-easing="linear"
+						data-aos-delay="500" data-aos="fade-right" data-aos-duration="1000">
 						<div id="carouselExampleFade" class="carousel slide carousel-slide">
 							<div class="carousel-indicators doctor_indicators">
-								<!-- Dynamically create indicators for each carousel item (chunk of doctors) -->
-								<?php foreach ($chunks as $key => $chunk): ?>
-									<button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="<?= $key ?>" class="<?= ($key == 0) ? 'active' : '' ?>" aria-label="Slide <?= $key + 1 ?>"></button>
-								<?php endforeach; ?>
+								<button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0"
+									class="active" aria-current="true" aria-label="Slide 1"></button>
+								<button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1"
+									aria-label="Slide 2"></button>
+								<button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2"
+									aria-label="Slide 3"></button>
+								<button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="3"
+									aria-label="Slide 4"></button>
 							</div>
 
 							<div class="carousel-inner">
-								<!-- Dynamically create carousel items with two doctors per row -->
-								<?php foreach ($chunks as $key => $chunk): ?>
-									<div class="carousel-item <?= ($key == 0) ? 'active' : '' ?>">
-										<div class="row">
-											<?php foreach ($chunk as $doctor): ?>
-												<div class="col-lg-6 col-md-6 col-sm-6">
-													<div class="our_export">
-														<?php if ($doctor['image']): ?>
-															<img src="data:image/jpeg;base64,<?= $doctor['image'] ?>" alt="doctor image" class="img-fluid">
-														<?php else: ?>
-															<img src="<?php echo $base_url; ?>assets/images/home/default_doctor_image.webp" alt="doctor image" class="img-fluid">
-														<?php endif; ?>
-														<div class="doct_name">
-															<h3><?= $doctor['name'] ?></h3>
-															<p><?= $doctor['specialized_in'] ?></p>
-														</div>
-													</div>
+								<div class="carousel-item active">
+									<div class="row">
+										<div class="col-lg-6 col-md-6 col-sm-6">
+											<div class="our_export">
+												<img src="<?php echo $base_url; ?>assets/images/home/care_doctor.webp"
+													alt="doctor image" class="img-fluid">
+												<div class="doct_name">
+													<h3>Dr. Saini Venkateswarlu</h3>
+													<p>M.D</p>
 												</div>
-											<?php endforeach; ?>
+											</div>
 										</div>
-									</div>
-								<?php endforeach; ?>
-							</div>
-						</div>
-					</div>
-
-
-
-
-
-					<?php
-					if (session_status() == PHP_SESSION_NONE) {
-						session_start();
-					}
-
-					// Connect to the database
-					$con = mysqli_connect('srv1328.hstgr.io', 'u629694569_carehospital', 'Kakatiya1234$', 'u629694569_carediabetesce');
-					if (!$con) {
-						die("Connection failed: " . mysqli_connect_error());
-					}
-
-					// Fetch videos from the database
-					$query = "SELECT * FROM expert_videos";
-					$result = mysqli_query($con, $query);
-
-					// Initialize the array to hold the fetched data
-					$data = [];
-
-					if ($result) {
-						while ($row = mysqli_fetch_assoc($result)) {
-							// If the video path is not NULL, keep it as is
-							if (!empty($row['video_data'])) {
-								// No base64 encoding needed for file path
-								$row['video_data'] = base64_encode($row['video_data']);
-							} else {
-								$row['video_data'] = null; // No video available
-							}
-							$data[] = $row;
-						}
-					}
-
-					// Close the database connection
-					mysqli_close($con);
-					?>
-
-					<div class="col-lg-6 col-md-12 col-sm-12 doct_gap2 os-init aos-animate" data-aos-easing="linear" data-aos-delay="500" data-aos="fade-left" data-aos-duration="1000">
-						<div id="carouselExampleFade2" class="carousel slide carousel-slide">
-							<div class="carousel-indicators doctor_indicators">
-								<?php
-								// Generate carousel indicators dynamically
-								foreach ($data as $index => $video) {
-									echo '<button type="button" data-bs-target="#carouselExampleFade2" data-bs-slide-to="' . $index . '"';
-									echo $index === 0 ? ' class="active"' : '';  // Set first item as active
-									echo ' aria-label="Slide ' . ($index + 1) . '"></button>';
-								}
-								?>
-							</div>
-
-							<div class="carousel-inner">
-								<?php
-								// Generate carousel items dynamically
-								foreach ($data as $index => $video) {
-									$activeClass = $index === 0 ? 'active' : '';  // Set first item as active
-									$videoSource = $video['video_data'];  // Video source from the database
-									$description = $video['description'];  // Description from the database
-								?>
-									<div class="carousel-item <?php echo $activeClass; ?>">
-										<div class="row">
-											<div class="col-lg-12 col-md-12 col-sm-12">
-												<div class="video_prp">
-													<div class="video-container">
-														<!-- Video Player -->
-														<?php if ($videoSource): ?>
-															<!-- <video id="myVideo<?php echo $video['id']; ?>" width="600" height="300" controls muted>
-                                            <source src="<?php echo $videoSource; ?>" type="video/mp4">
-                                            <source src="<?php echo $videoSource; ?>" type="video/ogg">
-                                            Your browser does not support the video tag.
-                                        </video> -->
-															<video id="myVideo1" width="600" height="300" controls muted>
-																<source src="data:video/mp4;base64,<?php echo $videoSource; ?>" type="video/mp4">
-																<source src="data:video/ogg;base64,<?php echo $videoSource; ?>" type="video/ogg">
-																Your browser does not support the video tag.
-															</video>
-														<?php else: ?>
-															<p>No video available.</p>
-														<?php endif; ?>
-
-														<!-- Description -->
-														<p><?php echo htmlspecialchars($description); ?></p>
-													</div>
+										<div class="col-lg-6 col-md-6 col-sm-6">
+											<div class="our_export">
+												<img src="<?php echo $base_url; ?>assets/images/home/care_doctor2.webp"
+													alt="doctor image" class="img-fluid">
+												<div class="doct_name">
+													<h3>Dr. Ganta Vandana</h3>
+													<p>M.D</p>
 												</div>
 											</div>
 										</div>
 									</div>
-								<?php
-								}
-								?>
+								</div>
+								<div class="carousel-item">
+									<div class="row">
+
+										<div class="col-lg-6 col-md-6 col-sm-6">
+											<div class="doct_name">
+												<div class="our_export">
+													<img src="assets/images/home/Dr_Madhavi_Cardiologist.webp"
+														alt="doctor image" class="img-fluid">
+													<h3>Dr. Madhavi</h3>
+													<p>Cardiologist</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6 col-sm-6">
+											<div class="our_export">
+												<img src="assets/images/home/Dr_Vidyasagar_General_Surgeon.webp"
+													alt="doctor image" class="img-fluid">
+												<div class="doct_name">
+													<h3>Dr. Vidhyasagar</h3>
+													<p>General Surgeon</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row">
+										<div class="col-lg-6 col-md-6 col-sm-6">
+											<div class="doct_name">
+												<div class="our_export">
+													<img src="assets/images/home/Dr_Mrunalini_Dental.webp"
+														alt="doctor image" class="img-fluid">
+													<h3>Dr. Mrunalini</h3>
+													<p>Dental</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6 col-sm-6">
+											<div class="doct_name">
+												<div class="our_export">
+													<img src="assets/images/home/Dr_Ajay_Physio.webp" alt="doctor image"
+														class="img-fluid">
+													<h3>Dr. Ajay</h3>
+													<p>Physiotherapist</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row">
+										<!--<div class="col-lg-6 col-md-6 col-sm-6">-->
+										<!--    <div class="doct_name">-->
+										<!--        <div class="our_export">-->
+										<!--            <img src="assets/images/home/care_doctor3.webp" alt="doctor image"-->
+										<!--                class="img-fluid">-->
+										<!--            <h3>Dr Bharadwaj Batchu</h3>-->
+										<!--            <p>Nephrologist</p>-->
+										<!--        </div>-->
+										<!--    </div>-->
+										<!--</div>-->
+										<div class="col-lg-6 col-md-6 col-sm-6">
+											<div class="doct_name">
+												<div class="our_export">
+													<img src="assets/images/home/Dr_Navaneeth_General_Physician.webp"
+														alt="doctor image" class="img-fluid">
+													<h3>Dr. Navaneeth</h3>
+													<p>General Physician</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
+
+						</div>
+
+					</div>
+					<div class="col-lg-6 col-md-12 col-sm-12 doct_gap2 os-init aos-animate" data-aos-easing="linear"
+						data-aos-delay="500" data-aos="fade-left" data-aos-duration="1000">
+						<div id="carouselExampleFade2" class="carousel slide carousel-slide">
+							<div class="carousel-indicators doctor_indicators">
+								<button type="button" data-bs-target="#carouselExampleFade2" data-bs-slide-to="0"
+									class="active" aria-current="true" aria-label="Slide 1"></button>
+								<button type="button" data-bs-target="#carouselExampleFade2" data-bs-slide-to="1"
+									aria-label="Slide 2"></button>
+								<button type="button" data-bs-target="#carouselExampleFade2" data-bs-slide-to="2"
+									aria-label="Slide 3"></button>
+								<button type="button" data-bs-target="#carouselExampleFade2" data-bs-slide-to="3"
+									aria-label="Slide 4"></button>
+							</div>
+
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12">
+											<div class="video_prp">
+												<div class="video-container">
+													<!--<img src="assets/images/home/care_video3.webp" alt="doctor image"-->
+													<!--    class="img-fluid">-->
+													<video id="myVideo1" width="600" height="300" controls muted>
+														<source src="assets/videos/doctors-video.mp4" type="video/mp4">
+														<source src="assets/videos/doctors-video.mp4" type="video/ogg">
+
+													</video>
+													<p>Our Care Diabetes Center has been helping people manage diabetes for over 25 years , offering expert care and support to improve their health and quality of life.</p>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12">
+											<div class="video_prp">
+												<!--<img src="assets/images/home/care_video3.webp" alt="doctor image"-->
+												<!--    class="img-fluid">-->
+												<div class="video-container">
+													<!--<img src="assets/images/home/care_video3.webp" alt="doctor image"-->
+													<!--    class="img-fluid">-->
+													<video id="myVideo1" width="600" height="300" controls muted>
+														<source src="assets/videos/doctors-video.mp4" type="video/mp4">
+														<source src="assets/videos/doctors-video.mp4" type="video/ogg">
+
+													</video>
+													<p>Our Care Diabetes Center has been helping people manage diabetes for over 25 years , offering expert care and support to improve their health and quality of life.</p>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12">
+											<div class="video_prp">
+												<div class="video-container">
+													<!--<img src="assets/images/home/care_video3.webp" alt="doctor image"-->
+													<!--    class="img-fluid">-->
+													<video id="myVideo1" width="600" height="300" controls muted>
+														<source src="assets/videos/doctors-video.mp4" type="video/mp4">
+														<source src="assets/videos/doctors-video.mp4" type="video/ogg">
+
+													</video>
+													<!--<img src="assets/images/home/care_video3.webp" alt="doctor image"-->
+													<!--    class="img-fluid">-->
+
+													<p>Our Care Diabetes Center has been helping people manage diabetes for over 25 years , offering expert care and support to improve their health and quality of life.</p>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12">
+											<div class="video_prp">
+												<div class="video-container">
+													<!--<img src="assets/images/home/care_video3.webp" alt="doctor image"-->
+													<!--    class="img-fluid">-->
+													<video id="myVideo1" width="600" height="300" controls muted>
+														<source src="assets/videos/doctors-video.mp4" type="video/mp4">
+														<source src="assets/videos/doctors-video.mp4" type="video/ogg">
+
+													</video>
+													<!--<img src="assets/images/home/care_video3.webp" alt="doctor image"-->
+													<!--    class="img-fluid">-->
+
+													<p>Our Care Diabetes Center has been helping people manage diabetes for over 25 years , offering expert care and support to improve their health and quality of life.</p>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
 						</div>
 					</div>
-
-					<!-- <div class="col-lg-6 col-md-6 col-sm-12 doct_gap2 os-init aos-animate" data-aos-easing="linear"
-                        data-aos-delay="500" data-aos="fade-left" data-aos-duration="1000">
-                        <div id="carouselExampleFade2" class="carousel slide carousel-slide">
-                            <div class="carousel-indicators doctor_indicators">
-                                <button type="button" data-bs-target="#carouselExampleFade2" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleFade2" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleFade2" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#carouselExampleFade2" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                            </div>
-
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <div class="video_prp">
-                                            <video id="myVideo1" width="600" height="300" controls muted>
-                                                        <source src="assets/videos/doctors-video.mp4" type="video/mp4">
-                                                        <source src="assets/videos/doctors-video.mp4" type="video/ogg">
-                                                        
-                                                        </video>
-                                                <p>We are highly skilled professionals with extensive experience,
-                                                    offering personalized care and staying
-                                                    updated with the latest advancements.</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <div class="video_prp">
-                                            <video id="myVideo1" width="600" height="300" controls muted>
-                                                        <source src="assets/videos/doctors-video.mp4" type="video/mp4">
-                                                        <source src="assets/videos/doctors-video.mp4" type="video/ogg">
-                                                        
-                                                        </video>
-                                                <p>We are highly skilled professionals with extensive experience,
-                                                    offering personalized care and staying
-                                                    updated with the latest advancements.</p>
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <div class="video_prp">
-                                            <video id="myVideo1" width="600" height="300" controls muted>
-                                                        <source src="assets/videos/doctors-video.mp4" type="video/mp4">
-                                                        <source src="assets/videos/doctors-video.mp4" type="video/ogg">
-                                                        
-                                                        </video>
-
-                                                <p>We are highly skilled professionals with extensive experience,
-                                                    offering personalized care and staying
-                                                    updated with the latest advancements.</p>
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div> -->
 				</div>
 			</div>
 		</section>
@@ -962,6 +1029,42 @@
 
 		<script>
 			AOS.init();
+		</script>
+
+
+		<script>
+			// Wait for the document to load
+			document.addEventListener('DOMContentLoaded', function() {
+				// Add an event listener for user interaction (e.g., a click on the carousel)
+				var carousel = document.querySelector('.carousel-inner');
+
+				// Detect the first user interaction (click or touch)
+				carousel.addEventListener('click', function() {
+					// Get the currently active video
+					var activeVideo = document.querySelector('.carousel-item.active video');
+					if (activeVideo) {
+						// Unmute and play the video when clicked
+						activeVideo.muted = false; // Unmute the video
+						activeVideo.play(); // Play the video
+					}
+				});
+			});
+		</script>
+
+
+		<script>
+			// Wait for the user to interact with the page (e.g., click)
+			document.addEventListener('click', function() {
+				const videos = document.querySelectorAll('video');
+				videos.forEach(video => {
+					// Remove the muted attribute after the video is played
+					video.play().then(() => {
+						video.muted = false; // Unmute the video after it starts playing
+					}).catch(error => {
+						console.log('Autoplay failed:', error);
+					});
+				});
+			});
 		</script>
 </body>
 
