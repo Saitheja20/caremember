@@ -109,6 +109,16 @@ class Welcome extends CI_Controller {
 	   // echo "ere";die;
 	  	$this->load->view('pnemococal');
 	}
+	public function visit_count()
+	{
+	   // echo "ere";die;
+	  	$this->load->view('visit_count');
+	}
+	public function visit_count1()
+	{
+	   // echo "ere";die;
+	  	$this->load->view('visit_count1');
+	}
 	public function fluVaccine()
 	{
 	   // echo "ere";die;

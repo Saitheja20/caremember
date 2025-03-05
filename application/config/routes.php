@@ -114,6 +114,7 @@ $route['disease_details'] = 'welcome/disease_details';
 $route['bookAppointment'] = 'welcome/bookAppointment';
 $route['ErectileDysfunction'] = 'welcome/ErectileDysfunction';
 $route['venkateswarlu'] = 'welcome/venkateswarlu';
-
+$route['visit_count'] = 'welcome/visit_count';
+$route['visit_count1'] = 'welcome/visit_count1';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

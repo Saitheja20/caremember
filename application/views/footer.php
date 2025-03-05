@@ -1,3 +1,43 @@
+ 
+ <style>
+     .website-counter {
+    margin: 10px;
+    /* padding: 10px 10px; */
+   background-color: #2f3194;
+    height: 40px;
+    width: 80px;
+    color: white;
+    /* border-radius: 30px; */
+    font-weight: 700;
+    font-size: 25px;
+    /* margin-top: 10px; */
+}
+  
+ 
+  #reset {
+    margin-top: 20px;
+    background-color: #008cba;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 8px 20px;
+    color: white;
+    border: 0;
+  }
+  .website-count{
+  justify-content: center;
+  display: flex
+;
+  align-items: center;
+  text-align: center;
+   background-color:#00b2f1ab;
+  
+  }
+  .website-count h1{
+    color: white;
+    font-size: 16px;
+  }
+ </style>
+ 
   <section class="footer_section">
       <div class="footer">
           <div class="container">
@@ -81,6 +121,11 @@
       </div>
 
       <div class="footer_orange_bg"></div>
+       <div class="website-count">
+  <h1>Website visit count:</h1>
+  <div class="website-counter"></div>
+      
+      </div>
 
       <button onclick="topFunction()" id="myBtn" title="Go to top" class="top-arrow"><i class="fa-solid fa-angle-up"></i></button>
   </section>
@@ -103,7 +148,44 @@
   <script>
       AOS.init();
   </script>
+  
+  <!-- <script>
+  var counterContainer = document.querySelector(".website-counter");
+var resetButton = document.querySelector("#reset");
+//var visitCount = 1
 
+// Check if page_view entry is present
+if (visitCount) {
+  visitCount = Number(visitCount) + 1;
+//   localStorage.setItem("page_view", visitCount);
+} else {
+  visitCount =  Number(visitCount) + 1;;
+//   localStorage.setItem("page_view", 1);
+}
+counterContainer.innerHTML = visitCount;
+
+// Adding onClick event listener
+// resetButton.addEventListener("click", () => {
+//   visitCount = 1;
+//   localStorage.setItem("page_view", 1);
+//   counterContainer.innerHTML = visitCount;
+// });
+
+  </script> -->
+	<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		var counterContainer = document.querySelector(".website-counter");
+
+		// Fetch the visit count from the server
+		fetch('visit_count')
+		.then(response => response.json())
+		.then(data => {
+			counterContainer.innerHTML = data.count;
+			console.log(data.count);
+		})
+		.catch(error => console.error('Error fetching visit count:', error));
+	});
+	</script>
 
   <!-- Navbar & Top Button Script -->
   <script>

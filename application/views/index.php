@@ -503,7 +503,7 @@
 					}
 
 					// Fetch videos from the database
-					$query = "SELECT * FROM expert_videos2";
+					$query = "SELECT * FROM expert_videos2 WHERE status = 1";
 					$result = mysqli_query($con, $query);
 
 					// Initialize the array to hold the fetched data
@@ -559,7 +559,7 @@
                                             <source src="<?php echo $videoSource; ?>" type="video/ogg">
                                             Your browser does not support the video tag.
                                         </video> -->
-															<video id="myVideo1" width="600" height="300" controls muted>
+															<video id="myVideo<?php echo $video['id']; ?>" width="600" height="300" controls muted>
 														<source src="http://localhost/caremember2/caremember/assets/videos/<?php echo $videoSource; ?>" type="video/mp4">
 														<source src="http://localhost/caremember2/caremember/assets/videos/<?php echo $videoSource; ?>" type="video/ogg">
 
@@ -963,6 +963,31 @@
 
 		<script>
 			AOS.init();
+			document.addEventListener('DOMContentLoaded', function() {
+    // Get the carousel element
+    var carousel = document.getElementById('carouselExampleFade2');
+
+    // Listen for the slide event
+    carousel.addEventListener('slide.bs.carousel', function () {
+      // Pause all videos when the slide changes
+      var videos = document.querySelectorAll('video');
+      videos.forEach(function(video) {
+        video.pause();
+      });
+    });
+
+    // Listen for the 'slid' event which is triggered after the slide transition ends
+    carousel.addEventListener('slid.bs.carousel', function () {
+      // Get the current active carousel item
+      var activeItem = carousel.querySelector('.carousel-item.active');
+      // Find the video inside the active carousel item
+      var video = activeItem.querySelector('video');
+      if (video) {
+        // Play the video in the active slide
+        video.play();
+      }
+    });
+  });
 		</script>
 </body>
 
